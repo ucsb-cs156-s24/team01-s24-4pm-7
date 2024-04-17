@@ -1,10 +1,8 @@
 package edu.ucsb.cs156.spring.backenddemo.services;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
-
 
 import org.junit.jupiter.api.Test;
 
