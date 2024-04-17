@@ -35,9 +35,9 @@ import io.swagger.v3.oas.annotations.tags.Tag;
         @Parameter(name=&quot;endDate&quot;, description=&quot;end date for tides YYYYmmdd&quot;, example=&quot;20240131&quot;) @RequestParam String endDate,
         @Parameter(name=&quot;station&quot;, description=&quot;weather station number&quot;, example=&quot;9411340&quot;) @RequestParam String station
     ) throws JsonProcessingException {
-<span class="nc" id="L38">        log.info(&quot;getTides: beginDate={} endDate={} station={}&quot;, beginDate, endDate, station);</span>
-<span class="nc" id="L39">        String result = tidesQueryService.getJSON(beginDate, endDate, station);</span>
-<span class="nc" id="L40">        return ResponseEntity.ok().body(result);</span>
+<span class="fc" id="L38">        log.info(&quot;getTides: beginDate={} endDate={} station={}&quot;, beginDate, endDate, station);</span>
+<span class="fc" id="L39">        String result = tidesQueryService.getJSON(beginDate, endDate, station);</span>
+<span class="fc" id="L40">        return ResponseEntity.ok().body(result);</span>
     }
 
 }
