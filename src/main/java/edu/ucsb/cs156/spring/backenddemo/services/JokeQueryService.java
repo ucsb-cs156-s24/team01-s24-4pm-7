@@ -29,7 +29,7 @@ public class JokeQueryService {
     public static final String ENDPOINT = "https://v2.jokeapi.dev/joke/{category}?amount={numJokes}";
 
     public String getJSON(String category, int numJokes) throws HttpClientErrorException {
-        log.info("category={}, numJokes={}", category, numJokes);
+        log.info("category={}, numJokes={}", category, String.valueOf(numJokes));
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
