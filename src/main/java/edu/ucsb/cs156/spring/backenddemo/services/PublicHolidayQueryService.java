@@ -25,7 +25,4 @@ public class PublicHolidayQueryService {
     public String getJSON(String year, String countryCode) throws HttpClientErrorException {
         return "";
     }
-
-   
-
 }
