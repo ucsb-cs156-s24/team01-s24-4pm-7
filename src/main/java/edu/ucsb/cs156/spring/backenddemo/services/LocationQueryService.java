@@ -59,7 +59,7 @@ public class LocationQueryService {
     public static final String ENDPOINT = 
         "https://nominatim.openstreetmap.org/search?q={location}&format=jsonv2";
 
-        public String getJSON(String location) throws HttpClientErrorException {
+    public String getJSON(String location) throws HttpClientErrorException {
         log.info("location={}", location);
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
